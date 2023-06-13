@@ -42,24 +42,26 @@ body{
 
 .fa-solid.fa-location-dot {
     color: #06283d;
-    font-size: 2em; 
-    padding-right: 10px;
-    margin-left: -5px;
+    font-size: 1.9em; 
+    padding-right: 20px;
+    margin-left: -4px;
   }
   
   .fa-solid.fa-magnifying-glass {
     /* color: white; */
     font-size: 1.5em; 
+    margin-right: -12px;
   }
   
 
 .search-box input{
 color: #06283d ;
 width: 80%;
+height: 40px;
 font-size: 24px;
 font-weight: 500;
 text-transform: uppercase;
-margin-left: 5%;
+margin-left: 8%;
 padding-left: 32px;
 }
 
@@ -77,10 +79,11 @@ padding-left: 32px;
     height: 50px;
     color: #06283d;
     background: #dff6ff;
-    border-radius: 50%;
-    margin: 10px; /*revisit*/
+    border-radius: 100%;
+    margin: 8px; /*revisit*/
     font-size: 22px;
     transition: 0.4s ease;
+    margin-right: -3%;
 }
 
 .search-box button:hover {
@@ -94,6 +97,16 @@ padding-left: 32px;
     font-size: 28px;
 
 }
+
+.search-box input {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 11px;
+}
+
+.search-box button {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
 
 .weather-box{
     text-align: center;
@@ -158,20 +171,20 @@ padding-left: 32px;
 }
 
 
-.weather-details i{
+.weather-deets i{
     color: #161746;
     font-size: 26px;
     margin-right: 10px;
     margin-top: 6px;
 }
 
-.weather-details span{
+.weather-deets span{
     color: #161746;
     font-size: 22px;
     font-weight: 500;
 }
 
-.weather-details span{
+.weather-deets span{
     color: #161746;
     font-size: 14px;
     font-weight: 500;

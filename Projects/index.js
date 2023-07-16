@@ -4,6 +4,15 @@ const weatherBox = document.querySelector('.weather-box');
 const weatherDeets = document.querySelector('.weather-deets');
 const error404 = document.querySelector('.not-found');
 
+function getRandomImageURL() {
+  const width = 1600;
+  const height = 900;
+  const query = 'nature'; 
+  const randomNum = Math.floor(Math.random() * 1000); // Generate a random number between 0 and 999
+  return `https://source.unsplash.com/${width}x${height}/?${query}&random=${randomNum}`;
+  
+  // return `https://source.unsplash.com/${width}x${height}/?${query}`;
+}
 
 search.addEventListener('click', () =>{
     const APIKey = 'b039af501f43645908e6afd71b11096f';
@@ -27,6 +36,8 @@ search.addEventListener('click', () =>{
 
         error404.style.display = 'none';
           error404.classList.remove('fadeIn');
+          const natureImageURL = getRandomImageURL();
+      document.body.style.backgroundImage = `url('${natureImageURL}')`;
 
           const image = document.querySelector('.weather-box img');
           const temp = document.querySelector('.weather-box .temp');
